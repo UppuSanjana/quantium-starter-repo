@@ -52,7 +52,7 @@ app.layout = html.Div(
                 ),
 
                 dcc.RadioItems(
-                    id="region-selector",
+                    id="region-picker",
 
                     options=[
                         {"label": " All", "value": "all"},
@@ -82,8 +82,7 @@ app.layout = html.Div(
 
         ),
 
-        dcc.Graph(id="sales-chart")
-
+            dcc.Graph(id="sales-graph")
     ]
 
 )
