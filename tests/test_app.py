@@ -6,7 +6,7 @@ def test_header_present(dash_duo):
     dash_duo.start_server(app)
 
     header = dash_duo.find_element("h1")
-    assert "Pink Morsel Sales Dashboard" in header.text
+    assert header.text == "Pink Morsel Sales Dashboard"
 
 
 def test_graph_present(dash_duo):
